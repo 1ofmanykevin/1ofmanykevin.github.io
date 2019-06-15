@@ -16,7 +16,6 @@ Primary style
   white-space: nowrap;
   left: 0;
   top: 0;
-  color: red;
 }
 .cd-words-wrapper b.is-visible {
   position: relative;
@@ -28,13 +27,7 @@ Primary style
   opacity: 1;
 }
 
-.no-js .cd-words-wrapper b.programmer {
-  color: green;
-}
 
-.no-js .cd-words-wrapper b.artist{
-  color: red;
-}
 
 
 
@@ -65,6 +58,14 @@ xslide
   -webkit-animation: slide-out 0.6s;
   -moz-animation: slide-out 0.6s;
   animation: slide-out 0.6s;
+}
+
+.cd-words-wrapper b.programmer {
+  color: green;
+}
+
+.cd-words-wrapper b.artist{
+  color: red;
 }
 
 @-webkit-keyframes slide-in {
