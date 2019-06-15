@@ -27,6 +27,15 @@ Primary style
   opacity: 1;
 }
 
+b.programmer {
+  color: green;
+}
+
+b.artist{
+  color: red;
+}
+
+
 
 xslide 
 
@@ -166,4 +175,3 @@ xslide
   }
 }
 /* -------------------------------- 
-
