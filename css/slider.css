@@ -27,11 +27,11 @@ Primary style
   opacity: 1;
 }
 
-.cd-words-wrapper b.programmer {
+.no-js .cd-words-wrapper b.programmer {
   color: green;
 }
 
-.cd-words-wrapper b.artist{
+.no-js .cd-words-wrapper b.artist{
   color: red;
 }
 
