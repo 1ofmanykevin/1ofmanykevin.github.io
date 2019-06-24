@@ -1,6 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
+
+
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -12,6 +15,7 @@ h5,
 h6 {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
 p {
   font-family: 'Roboto', sans-serif;
   line-height: 22px;
@@ -193,6 +197,7 @@ a:hover {
   letter-spacing: normal;
   border-radius: 0;
 }
+
 #call-to-action {
   background: #02bdd5;
   background-size: cover;
