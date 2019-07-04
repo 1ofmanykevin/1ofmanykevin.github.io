@@ -1374,6 +1374,7 @@ px      68    160    252    */
   }
   .navbar-header .navbar-brand a {
     padding: 6px 8px;
+    margin-top: 2px;
   }
   #hero-area {
     padding: 140px 0;
@@ -1422,6 +1423,7 @@ px      68    160    252    */
   }
   .navbar-collapse {
     background: #333333;
+    margin-top: 20px;
   }
   #top-bar .main-menu li > a {
     color: #fff;
@@ -1447,6 +1449,7 @@ px      68    160    252    */
     text-decoration: none;
     padding: 15px;
     color: #333;
+    margin-top: -5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
