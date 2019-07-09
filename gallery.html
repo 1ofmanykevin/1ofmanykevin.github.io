@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <head>
+
         <!-- Basic Page Needs
         ================================================== -->
         <meta charset="utf-8">
@@ -35,8 +37,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
-
        <!--
         ==================================================
         Header Section Start
@@ -79,7 +79,6 @@
             </div>
         </header>
         
-
         <!-- 
         ================================================== 
             Global Page Section Start
@@ -114,6 +113,17 @@
         </section>
 
 
+<script>
+    //create struct to be combined with angular
+    var paintings;
+    paintings = [
+        {id: "19. Scroll.jpg", name: "The Bay", info: "Intaglio, monoprint, and watercolor"},
+        {id: "18. Barred.jpg", name: "Barred", info: "Linoleum relief print"},
+        {id: "17. Study.jpg", name: "Bliss", info: "Intaglio"}
+
+    ];
+</script>
+
 <!--=============================
 =            Gallery            =
 ==============================-->
@@ -124,19 +134,19 @@
                     <div class="col-sm-4 col-xs-12">
                         <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
-                                <img class="cropIMG" src="images/portfolio/item-1.jpg" class="img-responsive" alt="this is a title" >
+                                <img class="cropIMG" src="images/Artwork/Animations/1. The Marathon Runner.JPG" class="img-responsive" alt="this is a title" >
                                 <div class="overlay">
                                     <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="images/portfolio/item-1.jpg">View</a>
+                                        <a rel="gallery" class="fancybox" href="https://youtu.be/2iwYCgiOw18" target="_blank">View</a>
                                     </div>
                                 </div>
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Dew Drop
+                                The Marathon Runner
                             </h4>
                             <p>
-                                Redesigne UI Concept
+                                Rotoscoping and stop motion
                             </p>
                             </figcaption>
                         </figure>
@@ -146,6 +156,31 @@
 
         <h1 id="drawing" class="title wow fadeInDown" data-wow-delay=".3s">Drawing and Painting</h1>
                 <div class="row">
+
+
+                    <div ng-if="false" class="col-sm-4 col-xs-12">
+                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                            <div class="img-wrapper">
+                                <img class="cropIMG" src="images/Artwork/Paintings/19. Scroll.jpg" class="img-responsive" alt="this is a title" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a rel="gallery" class="fancybox" href="images/Artwork/Paintings/19. Scroll.jpg">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                            <h4 style="color: #f09481">
+                                The Bay
+                            </h4>
+                            <p>
+                                Intaglio, monoprint, and watercolor
+                            </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+
+
                     <div class="col-sm-4 col-xs-12">
                         <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
@@ -158,10 +193,10 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Dew Drop
+                                The Bay
                             </h4>
                             <p>
-                                Redesigne UI Concept
+                                Intaglio, monoprint, and watercolor
                             </p>
                             </figcaption>
                         </figure>
@@ -179,17 +214,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Bottle Mockup
+                                Barred
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit.
+                                Linoleum relief print
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/17. Study.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
@@ -200,19 +235,19 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Table Design
+                                Bliss
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit amet.
+                                Intaglio
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
-                                <img src="images/Artwork/Paintings/16. Portrait study.jpg" class="img-responsive" alt="" >
+                                <img class="cropIMG" src="images/Artwork/Paintings/16. Portrait study.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
                                     <div class="buttons">
                                         <a rel="gallery" class="fancybox" href="images/Artwork/Paintings/16. Portrait study.jpg">View</a>
@@ -221,18 +256,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Make Up elements
+                                Portrait Study
                             </h4>
                             <p>
-                                Lorem ipsum dolor.
+                                Digital painting
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
-                <div class="row">
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="300ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/15. Porch.jpg" class="img-responsive" alt="this is a title" >
                                 <div class="overlay">
@@ -243,17 +277,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Dew Drop
+                                Hopper
                             </h4>
                             <p>
-                                Redesigne UI Concept
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
                     
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/14. Car.jpg" class="img-responsive" alt="this is a title" >
                                 <div class="overlay">
@@ -264,17 +298,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Bottle Mockup
+                                Just a Little More
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit.
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/13. Alley.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
@@ -285,19 +319,19 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Table Design
+                                Stop
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit amet.
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
                             <div class="img-wrapper">
-                                <img src="images/Artwork/Paintings/12. Cyborg.jpg" class="img-responsive" alt="" >
+                                <img class="cropIMG" src="images/Artwork/Paintings/12. Cyborg.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
                                     <div class="buttons">
                                         <a rel="gallery" class="fancybox" href="images/Artwork/Paintings/12. Cyborg.jpg">View</a>
@@ -306,18 +340,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Make Up elements
+                                Harmony?
                             </h4>
                             <p>
-                                Lorem ipsum dolor.
+                                Watercolor
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
-                <div class="row">
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="600ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/11. Figures.jpg" class="img-responsive" alt="this is a title" >
                                 <div class="overlay">
@@ -328,17 +361,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Dew Drop
+                                Figures
                             </h4>
                             <p>
-                                Redesigne UI Concept
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
                     
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/10. Monitor.jpg" class="img-responsive" alt="this is a title" >
                                 <div class="overlay">
@@ -349,10 +382,10 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Bottle Mockup
+                                Enraptured
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit.
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
@@ -360,6 +393,27 @@
 
                     <div class="col-sm-4 col-xs-12">
                         <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="img-wrapper">
+                                <img class="cropIMG" src="images/Artwork/Paintings/10. Peony.jpg" class="img-responsive" alt="this is a title" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a rel="gallery" class="fancybox" href="images/Artwork/Paintings/10. Peony.jpg">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                            <h4 style="color: #f09481">
+                                Enraptured
+                            </h4>
+                            <p>
+                                Oil
+                            </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/9. Aspirations.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
@@ -370,19 +424,19 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Table Design
+                                The Future
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit amet.
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
-                                <img src="images/Artwork/Paintings/8. Fist.jpg" class="img-responsive" alt="" >
+                                <img class="cropIMG" src="images/Artwork/Paintings/8. Fist.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
                                     <div class="buttons">
                                         <a rel="gallery" class="fancybox" href="images/Artwork/Paintings/8. Fist.jpg">View</a>
@@ -391,18 +445,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Make Up elements
+                                Power
                             </h4>
                             <p>
-                                Lorem ipsum dolor.
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
-                                <div class="row">
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="300ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/7. Self Portrait.jpg" class="img-responsive" alt="this is a title" >
                                 <div class="overlay">
@@ -413,17 +466,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Dew Drop
+                                Self Portrait
                             </h4>
                             <p>
-                                Redesigne UI Concept
+                                Pencil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
                     
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/6. Rose.jpg" class="img-responsive" alt="this is a title" >
                                 <div class="overlay">
@@ -434,17 +487,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Bottle Mockup
+                                Rose
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit.
+                                Pencil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/5. Model.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
@@ -455,10 +508,31 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Table Design
+                                Evening
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit amet.
+                                Oil
+                            </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="img-wrapper">
+                                <img class="cropIMG" src="images/Artwork/Paintings/4. Krotchy.jpg" class="img-responsive" alt="" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a rel="gallery" class="fancybox" href="images/Artwork/Paintings/4. Krotchy.jpg">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                            <h4 style="color: #f09481">
+                                Still Life
+                            </h4>
+                            <p>
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
@@ -467,7 +541,7 @@
                     <div class="col-sm-4 col-xs-12">
                         <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
                             <div class="img-wrapper">
-                                <img src="images/Artwork/Paintings/4. Still.jpg" class="img-responsive" alt="" >
+                                <img class="cropIMG" src="images/Artwork/Paintings/4. Still.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
                                     <div class="buttons">
                                         <a rel="gallery" class="fancybox" href="images/Artwork/Paintings/4. Still.jpg">View</a>
@@ -476,16 +550,15 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Make Up elements
+                                Still Life
                             </h4>
                             <p>
-                                Lorem ipsum dolor.
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
-                <div class="row">
                     <div class="col-sm-4 col-xs-12">
                         <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
@@ -498,10 +571,10 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Dew Drop
+                                Flower
                             </h4>
                             <p>
-                                Redesigne UI Concept
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
@@ -519,17 +592,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Bottle Mockup
+                                Still Life
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit.
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
                             <div class="img-wrapper">
                                 <img class="cropIMG" src="images/Artwork/Paintings/2. Still.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
@@ -540,17 +613,17 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Table Design
+                                Still Life
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit amet.
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
 
                     <div class="col-sm-4 col-xs-12">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
                                 <img src="images/Artwork/Paintings/1. Pointilism.jpg" class="img-responsive" alt="" >
                                 <div class="overlay">
@@ -561,14 +634,18 @@
                             </div>
                             <figcaption>
                             <h4 style="color: #f09481">
-                                Make Up elements
+                                Still Life
                             </h4>
                             <p>
-                                Lorem ipsum dolor.
+                                Oil
                             </p>
                             </figcaption>
                         </figure>
                     </div>
+
+
+
+
 
                 </div>
 

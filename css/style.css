@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
   overflow: hidden;
   object-fit: cover;
+  position: relative;
+  transform: translateX(-15%);
 }
 
 h1::before { 
